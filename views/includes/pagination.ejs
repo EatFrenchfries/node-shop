@@ -1,0 +1,9 @@
+<div class="pagination">
+  <% if(currentPage> 2) { %>
+  <a href="?page=1">First</a>
+  <% } %> <% for(var index=1; index <= lastPage; index++) { %>
+  <a href="?page=<%= index %>" class="<%= index === currentPage ? 'active' : '' %>"><%= index %></a>
+  <% } %> <% if(lastPage > currentPage) { %>
+  <a href="?page=<%= lastPage %>">Last</a>
+  <% } %>
+</div>
