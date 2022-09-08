@@ -6,6 +6,7 @@
   "engines": {
     "node":"16.15.1"
   },
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://js.stripe.com/v3/ 'unsafe-inline'; object-src 'self'",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
